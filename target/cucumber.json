@@ -1,0 +1,100 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "EE\u003eCreate User",
+        "description": "",
+        "id": "validate-estern-enterprise-functionality;ee\u003ecreate-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 94405523799,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I will be launching EE on \"QA\" environment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "QA",
+                  "offset": 27
+                }
+              ],
+              "location": "EESteps.launchEE(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12195814686,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "create new user",
+            "match": {
+              "location": "EESteps.create_new_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3883584972,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I logout from application",
+            "match": {
+              "location": "EESteps.logout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5402477544,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I login into application",
+            "match": {
+              "location": "EESteps.login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 364186915,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I create test report for \"EE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "EE",
+                  "offset": 26
+                }
+              ],
+              "location": "EESteps.createTestReport(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate Estern Enterprise functionality",
+    "description": "",
+    "id": "validate-estern-enterprise-functionality",
+    "keyword": "Feature",
+    "uri": "FeatureFiles/EE_TC.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@EETc"
+      }
+    ]
+  }
+]
